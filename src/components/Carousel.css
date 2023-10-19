@@ -1,0 +1,102 @@
+/* Carousel.css */
+
+h1 {
+  color: rgb(74, 118, 238);
+}
+
+p {
+  margin-right: -89px;
+}
+/* Add this class for fading effect */
+.person-img {
+  opacity: 0;
+  /* transition: opacity 1s ease-in-out; */
+}
+.left-arrow, .right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 50px; /* Adjust the width based on your preference */
+  height: 50px; /* Adjust the height based on your preference */
+  z-index: 1; /* Ensure arrows appear above images */
+}
+
+.left-arrow {
+  left: 20px;
+  margin-top: -78px;
+  margin-left: -27px;
+  border: 2px groove grey;
+  border-radius: 50%;
+}
+
+.right-arrow {
+  right: -21px;
+  margin-top: -61px;
+  border: 2px groove grey;
+  border-radius: 50%;
+ 
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.person-img {
+  /* animation-duration: 1s; */
+  /* Adjust the duration based on your preference */
+  /* animation-fill-mode: both; */
+}
+/* 
+.fade-in {
+  animation-name: fadeIn;
+}
+
+.fade-out {
+  animation-name: fadeOut;
+} */
+
+.people-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.person-img {
+  width: 30%;
+}
+
+.person-img img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border: 2px groove grey;
+}
+
+.indicator {
+  width: 20px;
+  /* Adjust the width based on your preference */
+  height: 20px;
+  /* Adjust the height based on your preference */
+  margin: 0 5px;
+  /* Adjust the margin based on your preference */
+  border-radius: 50%;
+  background-color: lightgray;
+  /* Adjust the background color based on your preference */
+  display: inline-block;
+}
+
+.indicator.active {
+  background-color: rgb(0, 47, 255);
+  /* Adjust the active indicator color based on your preference */
+}
+
+.indicators {
+  color: rgb(0, 81, 255);
+}
+
+/* ... rest of your CSS ... */
